@@ -1,5 +1,5 @@
-# Ubuntu20.04双系统安装指南及ROS一键安装  
-## Ubuntu20.04双系统安装
+# 第一次培训
+## 一、Ubuntu20.04双系统安装
 本文参考"从零制作自主空中机器人"课程     
 github链接: https://github.com/ZJU-FAST-Lab/Fast-Drone-250     
 B站视频链接: https://www.bilibili.com/video/BV1WZ4y167me
@@ -111,7 +111,7 @@ B站视频链接: https://www.bilibili.com/video/BV1WZ4y167me
 - 选自Windows或者Ubuntu作为默认启动项
 - 以后电脑开机时会弹出启动项选择界面，未选择则按照默认启动项启动。
 
-## ROS一键安装
+## 二、ROS一键安装
 本文参考"【Autolabor初级教程】ROS机器人入门"课程     
 文档链接: http://www.autolabor.com.cn/book/ROSTutorials/
 B站视频链接:https://www.bilibili.com/video/BV1Ci4y1L7ZZ/
@@ -154,11 +154,11 @@ Ctrl+Shift+N or Ctrl+Tab        //移动到下一个终端
 Ctrl+Shift+P or Ctrl+Shift+Tab  //Crtl+Shift+Tab 移动到之前的一个终端
 ```
 - 安装完terminator后，`ctrl+ALT+T`即可打开terminator
-## VScode安装与ROS调试
+## 三、VScode安装与ROS调试
 文档链接: http://www.autolabor.com.cn/book/ROSTutorials/
 B站视频链接:https://www.bilibili.com/video/BV1Ci4y1L7ZZ/
 参考视频中P25-28即可完成，对应到文档的1.4.2
-## 工作空间创建与任务程序运行
+## 四、工作空间创建与任务程序运行
 ### Step1: 创建工作空间
 - 在home目录下右键打开终端，输入`mkdir course_1/src`，进入该文件夹`cd course_1`，输入`catkin_make`进行编译
 - 从github仓库下下载文件夹`ros_turtle`，将其复制到`course_1/src`下，再在`course_1`目录下右键打开终端，输入`catkin_make`进行编译，然后输入`source ./devel.setup.bash`
@@ -166,3 +166,5 @@ B站视频链接:https://www.bilibili.com/video/BV1Ci4y1L7ZZ/
 - 在上一步的终端下，输入`roslaunch ros_turtle turtle_todo.launch`，若正常运行，可以出现含有一个小乌龟的画面，可以在终端下输入`ctrl+C`结束执行。
 - ros_turtle文件夹中右键打开终端，输入`code .`可以用vscode打开文件夹，其中要关注的是`/launch/turtle_todo.launch`和`/scr/turtle_todo.cpp`
 - 每次对.launch和.cpp文件进行修改后，运行前均需要在`course_1`目录下打开终端输入`catkin_make`进行编译，然后输入`source ./devel.setup.bash`，然后输入`roslaunch ros_turtle turtle_todo.launch`即可运行更新后的代码。
+## 五、第一周任务
+- 见`ros_turtle/Readme.txt`
