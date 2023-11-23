@@ -117,62 +117,43 @@ B站视频链接: https://www.bilibili.com/video/BV1WZ4y167me
 B站视频链接:https://www.bilibili.com/video/BV1Ci4y1L7ZZ/
 ### Step1: 安装ROS-noetic并配置
 - https://fishros.org.cn/forum/topic/20/小鱼的一键安装系列?lang=zh-CN
-- ctrl+ALT+T打开终端，输入以下一键安装指令（可以ctrl+shift+v在终端粘贴）
-wget http://fishros.com/install -O fishros && . fishros
+- `ctrl+ALT+T`打开终端，输入以下一键安装指令（可以ctrl+shift+v在终端粘贴）
+`wget http://fishros.com/install -O fishros && . fishros`
 - 根据提示，安装ROS-noetic桌面版（不要装ROS2），可以参考该文档https://azitide.github.io/post/ubuntu_ROS.html
 - 根据上述文档进行配置rosdep等操作
 ### Step2: 测试ROS
-- 首先启动三个终端(ctrl + alt + T，三次)
-- 终端1键入:roscore
-- 终端2键入:rosrun turtlesim turtlesim_node(此时会弹出图形化界面)
-- 终端3键入:rosrun turtlesim turtle_teleop_key(保持鼠标光标在该终端，在3中可以通过上下左右控制2中乌龟的运动)
+- 首先启动三个终端(`ctrl + alt + T`，三次)
+- 终端1键入:`roscore`
+- 终端2键入:`rosrun turtlesim turtlesim_node`(此时会弹出图形化界面)
+- 终端3键入:`rosrun turtlesim turtle_teleop_key`(保持鼠标光标在该终端，在3中可以通过上下左右控制2中乌龟的运动)
 ### Step3: 安装terminator
 - 在 ROS 中，需要频繁的使用到终端，且可能需要同时开启多个窗口，推荐一款较为好用的终端:Terminator。
-- ctrl+ALT+T 打开终端，输入sudo apt install terminator
+- ctrl+ALT+T 打开终端，输入`sudo apt install terminator`
 - 添加到收藏夹：显示应用程序 ---> 搜索 terminator ---> 右击 选择 添加到收藏夹
 - 常用快捷键如下：
-  
+```  
 Alt+Up                          //移动到上面的终端
-
 Alt+Down                        //移动到下面的终端
-
 Alt+Left                        //移动到左边的终端
-
 Alt+Right                       //移动到右边的终端
-
 Ctrl+Shift+O                    //水平分割终端
-
 Ctrl+Shift+E                    //垂直分割终端
-
 Ctrl+Shift+Right                //在垂直分割的终端中将分割条向右移动
-
 Ctrl+Shift+Left                 //在垂直分割的终端中将分割条向左移动
-
 Ctrl+Shift+Up                   //在水平分割的终端中将分割条向上移动
-
 Ctrl+Shift+Down                 //在水平分割的终端中将分割条向下移动
-
 Ctrl+Shift+S                    //隐藏/显示滚动条
-
 Ctrl+Shift+F                    //搜索
-
 Ctrl+Shift+C                    //复制选中的内容到剪贴板
-
 Ctrl+Shift+V                    //粘贴剪贴板的内容到此处
-
 Ctrl+Shift+W                    //关闭当前终端
-
 Ctrl+Shift+Q                    //退出当前窗口，当前窗口的所有终端都将被关闭
-
 Ctrl+Shift+X                    //最大化显示当前终端
-
 Ctrl+Shift+Z                    //最大化显示当前终端并使字体放大
-
 Ctrl+Shift+N or Ctrl+Tab        //移动到下一个终端
-
 Ctrl+Shift+P or Ctrl+Shift+Tab  //Crtl+Shift+Tab 移动到之前的一个终端
-
-- 安装完terminator后，ctrl+ALT+T即可打开terminator
+```
+- 安装完terminator后，`ctrl+ALT+T`即可打开terminator
 ## VScode安装与ROS调试
 文档链接: http://www.autolabor.com.cn/book/ROSTutorials/
 B站视频链接:https://www.bilibili.com/video/BV1Ci4y1L7ZZ/
