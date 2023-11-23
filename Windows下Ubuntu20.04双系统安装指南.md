@@ -1,16 +1,16 @@
-# Windows下Ubuntu20.04双系统安装指南
-本文档是Ubuntu双系统的操作指南。在电脑存在Windows情况下安装Ubuntu20.04作为第二操作系统     
+# Ubuntu20.04双系统安装指南及ROS一键安装  
+## Ubuntu20.04双系统安装
 本文参考"从零制作自主空中机器人"课程     
 github链接: https://github.com/ZJU-FAST-Lab/Fast-Drone-250     
 B站视频链接: https://www.bilibili.com/video/BV1WZ4y167me
-## Step0: 前期准备
+### Step0: 前期准备
 - 在电脑磁盘中清理出80G以上存储空间、准备一个8G以上空U盘
-## Step1: 在Windows下载Ubuntu20.04镜像
+### Step1: 在Windows下载Ubuntu20.04镜像
 - 镜像站地址：`http://mirrors.aliyun.com/ubuntu-releases/20.04/` 
 - 下载 `ubuntu-20.04.4-desktop-amd64.iso`
-## Step2: 下载镜像烧录软件UltraISO
+### Step2: 下载镜像烧录软件UltraISO
 - UltraISO官网：`https://cn.ultraiso.net/`
-## Step3: 格式化U盘并制作Ubuntu启动盘
+### Step3: 格式化U盘并制作Ubuntu启动盘
 - U盘格式化
   注意不要在卷标上面输入符号等不合法的字符
 
@@ -29,7 +29,7 @@ B站视频链接: https://www.bilibili.com/video/BV1WZ4y167me
 - 选择U盘，等待写入  
 
   <img src="https://github.com/qtjdyx/ZJUS/assets/116424162/b027080d-b434-494d-9b17-5de1086984c1" width="25%">
-## Step4: 释放磁盘空间
+### Step4: 释放磁盘空间
 - 以管理员权限进入进入控制面板-系统和安全-创建并格式化硬盘分区
 
   <img src="https://github.com/qtjdyx/ZJUS/assets/116424162/ac7c0c0f-0d70-495d-8226-2b50b0c937c8" width="75%">
@@ -43,7 +43,7 @@ B站视频链接: https://www.bilibili.com/video/BV1WZ4y167me
 - 此时，在你压缩的磁盘后将会出现一块未分配的磁盘分区，大小为你输入的压缩空间量
 
   <img src="https://github.com/qtjdyx/ZJUS/assets/116424162/b38fc73d-8788-4e83-ac7d-63b7a9efbdd4" width="50%">
-## Step5: 重启电脑进入BIOS界面，设置启动选项
+### Step5: 重启电脑进入BIOS界面，设置启动选项
 - 首先查询你的电脑进入BIOS界面的方式
 
   <img src="https://github.com/qtjdyx/ZJUS/assets/116424162/131d8996-4b39-4fd8-b8d3-e811553a48b9" width="50%">
@@ -59,7 +59,7 @@ B站视频链接: https://www.bilibili.com/video/BV1WZ4y167me
 - 将U盘启动上移至第一启动选项，保存退出
 - 备注：这一步非必须，视情况可以与上一步合并
 
-## Step6: 插入Ubuntu启动盘并用U盘启动
+### Step6: 插入Ubuntu启动盘并用U盘启动
 - 确认你的笔记本在开机前处在以下状态
   1. 在磁盘中拥有一块大小足够的未分配空间
   2. 电脑的安全启动选项已经关闭，否则会禁止你从外部启动
@@ -70,7 +70,7 @@ B站视频链接: https://www.bilibili.com/video/BV1WZ4y167me
 
   <img src="https://github.com/qtjdyx/ZJUS/assets/116424162/6b5b5b5d-85f1-4a33-9854-beaed9dd5836" width="50%"> 
  
-## Step7: 安装Ubuntu操作系统
+### Step7: 安装Ubuntu操作系统
 - 最好选择英文安装，想用中文也行
 - 选择键盘布局
 - 不连接到无线网
@@ -106,8 +106,14 @@ B站视频链接: https://www.bilibili.com/video/BV1WZ4y167me
 - 密码可以设置一位，方便后续命令行中sudo的时候输入密码
 - 安装完成
 - 重启
-## Step8: 设置默认启动选项
+### Step8: 设置默认启动选项
 - 进入BIOS-启动项
 - 选自Windows或者Ubuntu作为默认启动项
 - 以后电脑开机时会弹出启动项选择界面，未选择则按照默认启动项启动。
-  
+
+## ROS一键安装
+本文参考"【Autolabor初级教程】ROS机器人入门"课程     
+文档链接: http://www.autolabor.com.cn/book/ROSTutorials/
+B站视频链接:https://www.bilibili.com/video/BV1Ci4y1L7ZZ/
+### Step1: 打开社区链接
+https://fishros.org.cn/forum/topic/20/小鱼的一键安装系列?lang=zh-CN
