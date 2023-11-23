@@ -117,7 +117,8 @@ B站视频链接: https://www.bilibili.com/video/BV1WZ4y167me
 B站视频链接:https://www.bilibili.com/video/BV1Ci4y1L7ZZ/
 ### Step1: 安装ROS-noetic并配置
 - https://fishros.org.cn/forum/topic/20/小鱼的一键安装系列?lang=zh-CN
-- ctrl+ALT+T打开终端，输入一键安装指令wget http://fishros.com/install -O fishros && . fishros（可以ctrl+shift+v在终端粘贴）
+- ctrl+ALT+T打开终端，输入以下一键安装指令（可以ctrl+shift+v在终端粘贴）
+wget http://fishros.com/install -O fishros && . fishros
 - 根据提示，安装ROS-noetic桌面版（不要装ROS2），可以参考该文档https://azitide.github.io/post/ubuntu_ROS.html
 - 根据上述文档进行配置rosdep等操作
 ### Step2: 测试ROS
