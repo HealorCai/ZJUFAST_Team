@@ -165,3 +165,4 @@ B站视频链接:https://www.bilibili.com/video/BV1Ci4y1L7ZZ/
 ### Step2: 任务程序运行
 - 在上一步的终端下，输入`roslaunch ros_turtle turtle_todo.launch`，若正常运行，可以出现含有一个小乌龟的画面，可以在终端下输入`ctrl+C`结束执行。
 - ros_turtle文件夹中右键打开终端，输入`code .`可以用vscode打开文件夹，其中要关注的是`/launch/turtle_todo.launch`和`/scr/turtle_todo.cpp`
+- 每次对.launch和.cpp文件进行修改后，运行前均需要在`course_1`目录下打开终端输入`catkin_make`进行编译，然后输入`source ./devel.setup.bash`，然后输入`roslaunch ros_turtle turtle_todo.launch`即可运行更新后的代码。
