@@ -159,4 +159,8 @@ Ctrl+Shift+P or Ctrl+Shift+Tab  //Crtl+Shift+Tab 移动到之前的一个终端
 B站视频链接:https://www.bilibili.com/video/BV1Ci4y1L7ZZ/
 参考视频中P25-28即可完成，对应到文档的1.4.2
 ## 工作空间创建与任务程序运行
-
+### Step1: 创建工作空间
+- 在home目录下右键打开终端，输入`mkdir course_1/src`，进入该文件夹`cd course_1`，输入`catkin_make`进行编译
+- 从github仓库下下载文件夹`ros_turtle`，将其复制到`course_1/src`下，再在`course_1`目录下右键打开终端，输入`catkin_make`进行编译，然后输入`source ./devel.setup.bash`
+### Step2: 任务程序运行
+- 在上一步的终端下，输入`roslaunch ros_turtle `
